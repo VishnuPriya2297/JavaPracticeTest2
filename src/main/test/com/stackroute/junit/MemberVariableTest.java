@@ -33,4 +33,10 @@ public class MemberVariableTest {
         String result=object.printValues("priya",21,26000);
         assertEquals("Member's name: priya"+"\n"+"Member's age: 21"+"\n"+"Member's salary: 26000.0",result);
     }
+    @Test
+    public void  printDetailsOfMemberFail()
+    {
+        String result=object.printValues("priya",21,26000);
+        assertNotNull("Member's name: priya"+"\n"+"Member's age: 21"+"\n"+"Member's salary: 26000.0",result);
+    }
 }

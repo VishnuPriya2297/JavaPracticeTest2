@@ -1,5 +1,7 @@
 package main.java.com.stackroute.junit;
-
+/*
+calucalting the aggregate ,average and max sudent grades
+ */
 public class StudentGrades {
     public static String readGradeInput(int NumberOfStudent, int[] NGrades)
     {
@@ -44,7 +46,7 @@ public class StudentGrades {
         return s+(total/N);
     }
 
-    public static int min(int[] NGrades, int N)
+    public static int min(int[] NGrades, int N)//calculating the min grade
     {
         int min= NGrades[0];
         for (int i=1;i<N;i++)
@@ -58,7 +60,7 @@ public class StudentGrades {
         return min;
     }
 
-    public static int max(int[] NGrades, int N)
+    public static int max(int[] NGrades, int N)//calculating max grade
     {
         int max= NGrades[0];
         for (int i=1;i<N;i++)

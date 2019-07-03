@@ -1,4 +1,7 @@
 package main.java.com.stackroute.junit;
+/*
+program to calculate the factorial of the numbers
+ */
 
 import java.math.BigDecimal;
 
@@ -9,7 +12,7 @@ public class FactorialList {
         String outp = "";
         BigDecimal ob1 = new BigDecimal(1);
         System.out.println("List of factorials under long value is");
-        for (int i = 1; ; i++) {
+        for (int i = 1; ; i++) {//factorial for long integers
             if (ob1.compareTo(new BigDecimal(Long.MAX_VALUE)) < 0 && ob1.multiply(new BigDecimal(i + 1)).compareTo(new BigDecimal(Long.MAX_VALUE)) < 0) {
                 ob1 = ob1.multiply(new BigDecimal(i));
                 System.out.println(i);
@@ -23,7 +26,7 @@ public class FactorialList {
         return outp;
     }
 
-        public String intFactorial(){
+        public String intFactorial(){//code for interger factorials
             String outp = "";
             BigDecimal ob1 = new BigDecimal(1);
             BigDecimal ob2;

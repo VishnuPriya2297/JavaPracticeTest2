@@ -40,8 +40,10 @@ public class CheckPowerForFourTest {
         String number = object.checkPower(70);
         assertEquals("it is not a power of 4",number);
     }
-
-
-
-
+    @Test
+    public void testForNotPowerFail()
+    {
+        String number = object.checkPower(70);
+        assertNotNull("it is a power of 4",number);
+    }
 }

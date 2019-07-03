@@ -41,7 +41,12 @@ public class EvenNumberTest {
         assertEquals(false,number);
 
     }
+    @Test
+    public void testForNotEvenFail()
+    {
+        boolean number = object.isEven(75);
+        assertNotNull(String.valueOf(true),number);
 
-
+    }
 
 }

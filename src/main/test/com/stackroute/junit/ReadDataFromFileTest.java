@@ -38,4 +38,9 @@ public class ReadDataFromFileTest {
         String t=object.readFileAsString("/home/priya/Desktop/Bata.txt");
         assertEquals("File location not found",t);
     }
+    @Test
+    public void testForFileLocationNotFoundFail() throws Exception {
+        String t=object.readFileAsString("/home/priya/Desktop/Bata.txt");
+        assertNotNull("File location not found",t);
+    }
 }
