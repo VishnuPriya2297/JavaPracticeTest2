@@ -1,4 +1,4 @@
 .idea/
-out/
+
 javapracticetest2.iml
 README.md
